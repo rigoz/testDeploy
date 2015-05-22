@@ -3,9 +3,9 @@
 ############################################
 
 set :stage, :staging
-set :stage_url, "http://www.example.com"
-server "XXX.XXX.XX.XXX", user: "SSHUSER", roles: %w{web app db}
-set :deploy_to, "/deploy/to/path"
+set :stage_url, "http://localhost/staging/testDeploy"
+server "192.168.69.120", user: "pego", roles: %w{web app db}
+set :deploy_to, "/Users/pego/Web/staging/testDeploy"
 
 ############################################
 # Setup Git
@@ -21,8 +21,8 @@ set :branch, "development"
 
 #set :ssh_options, {
 #    auth_methods: %w(password),
-#    password: 'password',
-#    user: 'username',
+#    password: ‘asdasd’,
+#    user: ‘diginess’,
 #}
 
 #specify a specific temp dir if user is jailed to home
