@@ -18,7 +18,7 @@ set :wp_localurl, "http://localhost/wp/TestDeploy" # Your local environment URL
 ############################################
 
 set :application, "testDeploy"
-set :repo_url, "https://github.com/rigoz/testDeploy.git"
+set :repo_url, "git@github.com:rigoz/testDeploy.git"
 set :scm, :git
 
 set :git_strategy, SubmoduleStrategy
